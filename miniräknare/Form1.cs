@@ -57,6 +57,8 @@ namespace miniräknare
             // Alla "Modes"
             number2 = double.Parse(label1.Text);
             label1.Text = "0";
+            
+            // Kollar vilket 'Mode' det är och kalkylerar svaret baserat på det.
             if (mode == "+")
             {
                 double answer = number + number2;
@@ -191,6 +193,7 @@ namespace miniräknare
 
         private void button11_Click_1(object sender, EventArgs e)
         {
+            // Skriver ','
             label1.Text += CultureInfo.CurrentCulture.NumberFormat.NumberDecimalSeparator;
         }
     }
